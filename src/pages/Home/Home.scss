@@ -1,0 +1,47 @@
+.home_wrapper {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  padding: 40px;
+}
+
+.flex_center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_wrap {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.selected_card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  color: white;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s all;
+  border-radius: 10px;
+  &:hover{
+    transform: scale(1.1);
+  }
+  &>p{
+    text-align: center;
+    font-size: 32px;
+  }
+}
